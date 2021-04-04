@@ -1,6 +1,6 @@
 #Terraform, EKS, Wordpress, RDS
 
-#1.Ferramentas necessárias#
+#1 Ferramentas necessárias#
 
 Requisitos básicos do projeto:
 - a) Conta no console AWS
@@ -9,7 +9,7 @@ Requisitos básicos do projeto:
 - d) Terraform instalado e configurado - https://www.terraform.io/downloads.html
 
 
-#2. Clonar e preparar#
+#2 Clonar e preparar#
 
 1 - Execute o comando para clonar o projeto:
 *********
@@ -27,7 +27,7 @@ aws kms encrypt --key-id <YOUR KMS KEY> --region <AWS REGION> --plaintext fileb:
 6 - Estando no repositório do projeto executar através do prompt o seguinte comando
 Terraform init
 
-#3.Ambientes de Teste e Produção#
+#3 Ambientes de Teste e Produção#
 
 Para criar esses dois ambientes, usamos exatamente o mesmo código, mas criamos arquivos de variáveis ​​diferentes para ambientes de teste e produção, portanto, ao criar qualquer ambiente, basta passar o arquivo de variável correspondente:
 
@@ -37,21 +37,21 @@ terraform workspace new testing
 8 - selecting testing workspace
 terraform workspace select testing
 
-#4. Aplicando o projeto#
+#4 Aplicando o projeto#
 
 Estando no repositório do projeto, execute no prompt:
 9 - terraform apply -var-file=testing.tfvars
 
-#5. Apagando o projeto#
+#5 Apagando o projeto#
 10 - terraform destroy -var-file=testing.tfvars
 
-#6. Mapear cluster localmente#
+#6 Mapear cluster localmente#
 
 Execute estando em qualquer diretório dentro do prompt
 aws eks --region <region-code> update-kubeconfig --name <cluster_name>
 
 
-#7. Comandos Kubectl#
+#7 Comandos Kubectl#
 
 Verificar todos os namespaces
 kubectl get namespaces
