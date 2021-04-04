@@ -12,7 +12,7 @@ Requisitos básicos do projeto:
 # 2 - Clonar e preparar #
 
 1 - Execute o comando para clonar o projeto:
-git clone https://github.com/washingtondacosta/eks-terraform-k8s.git
+git clone https://<span></span>github.com/washingtondacosta/eks-terraform-k8s.git
 
 2 - Acessar o repositório
 eks-terraform-k8s
