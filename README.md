@@ -1,4 +1,4 @@
-#Terraform, EKS, Wordpress, RDS
+# Terraform, EKS, Wordpress, RDS
 
 ## 1 - Ferramentas necessárias #
 
