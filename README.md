@@ -63,8 +63,8 @@ Mudar o contexto default a ser visualizado, mudando para wordpress-rds
 kubectl config set-context --current --namespace=wordpress-rds
 
 Verificar informações namespace especifico (wordpress-rds)
-kubectl get pods -n wordpress-rds
-kubectl get nodes -n wordpress-rds
-kubectl get svc -n wordpress-rds
-kubectl get deploy -n wordpress-rds
+- kubectl get pods -n wordpress-rds
+- kubectl get nodes -n wordpress-rds
+- kubectl get svc -n wordpress-rds
+- kubectl get deploy -n wordpress-rds
 
