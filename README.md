@@ -49,7 +49,7 @@ _**terraform destroy -var-file=testing.tfvars**_
 ## 6 - Mapear cluster localmente #
 
 Execute estando em qualquer diretório dentro do prompt<br>
-_**aws eks --region <region-code> update-kubeconfig --name <cluster_name>**_
+_**aws eks --region {region-code} update-kubeconfig --name {cluster_name}**_
 
 
 ## 7 - Comandos Kubectl #
