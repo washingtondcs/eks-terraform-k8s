@@ -20,7 +20,7 @@ _**eks-terraform-k8s**_
 Utilizar o serviço Key Management Service (KMS) da Amazon para criar uma chave única de acesso a ser utilzada na instalação.
 
 Para compartilhamento seguro os dados de acesso ao banco de dados contidos no arquivo db-creds.yml, podem ser encriptados utilizando o comando KMS:<br>
-_**aws kms encrypt --key-id <YOUR KMS KEY> --region <AWS REGION> --plaintext fileb://db-creds.yml --output text --query CiphertextBlob > db-creds.yml.encrypted**_
+_**aws kms encrypt --key-id \YOUR KMS KEY\ --region \AWS REGION\ --plaintext fileb://db-creds.yml --output text --query CiphertextBlob > db-creds.yml.encrypted**_
 
 Copiar o novo arquivo criado (db-creds.yml.encrypted) e renomear com o seguinte nome: rds-creds.yml.encrypted
 
